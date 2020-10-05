@@ -1,6 +1,7 @@
 package com.example.recyclerviewlab;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
     private final LinkedList<String> mWordList;
     private final LinkedList<String> mDescription;
     private LayoutInflater mInflater;
+    private Context context;
     class WordViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
     {
         public final TextView wordItemView;
@@ -23,6 +25,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
         public WordViewHolder(View itemView, View itemView2, WordListAdapter adapter)
         {
             super(itemView);
+            context = itemView.getContext();
             //super(itemView2);
             wordItemView = itemView.findViewById(R.id.txtfooditem);
             wordItemView2 = itemView.findViewById(R.id.txtDescription);
@@ -35,17 +38,23 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             // Get the position of the item that was clicked.
             int mPosition = getLayoutPosition();
             int mPosition2 = getLayoutPosition();
-            System.out.println(mPosition);
-            String element = mWordList.get(mPosition);
-            String element2 = mDescription.get(mPosition2);
-            mWordList.set(mPosition, "Clicked! " +mPosition + element );
-            mDescription.set(mPosition2, "clicked! " + element2);
-            mAdpater.notifyDataSetChanged();
+            Intent intent = null;
+            if (mPosition == 0 || mPosition2 == 0)
+            {
+                intent = new Intent(context, MainActivity0.class);
+            }
+            context.startActivity(intent);
+//            System.out.println(mPosition);
+//            String element = mWordList.get(mPosition);
+//            String element2 = mDescription.get(mPosition2);
+//            mWordList.set(mPosition, "Clicked! " +mPosition + element );
+//            mDescription.set(mPosition2, "clicked! " + element2);
+//            mAdpater.notifyDataSetChanged();
         }
     }
-    public WordListAdapter(Context context, LinkedList<String> wordlist, LinkedList<String> description)
+    public WordListAdapter(Context context2, LinkedList<String> wordlist, LinkedList<String> description)
     {
-        mInflater = LayoutInflater.from(context);
+        mInflater = LayoutInflater.from(context2);
         this.mWordList = wordlist;
         this.mDescription = description;
     }
