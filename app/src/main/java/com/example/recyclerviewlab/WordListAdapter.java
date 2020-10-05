@@ -15,7 +15,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
     private final LinkedList<String> mWordList;
     private final LinkedList<String> mDescription;
     private LayoutInflater mInflater;
-    class WordViewHolder extends RecyclerView.ViewHolder
+    class WordViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
     {
         public final TextView wordItemView;
         public final TextView wordItemView2;
@@ -27,6 +27,20 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             wordItemView = itemView.findViewById(R.id.txtfooditem);
             wordItemView2 = itemView.findViewById(R.id.txtDescription);
             this.mAdpater = adapter;
+            itemView.setOnClickListener(this);
+            itemView2.setOnClickListener(this);
+        }
+        @Override
+        public void onClick(View v) {
+            // Get the position of the item that was clicked.
+            int mPosition = getLayoutPosition();
+            int mPosition2 = getLayoutPosition();
+            System.out.println(mPosition);
+            String element = mWordList.get(mPosition);
+            String element2 = mDescription.get(mPosition2);
+            mWordList.set(mPosition, "Clicked! " +mPosition + element );
+            mDescription.set(mPosition2, "clicked! " + element2);
+            mAdpater.notifyDataSetChanged();
         }
     }
     public WordListAdapter(Context context, LinkedList<String> wordlist, LinkedList<String> description)
