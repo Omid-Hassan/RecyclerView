@@ -17,6 +17,46 @@
                 android:value="com.example.recyclerviewlab.MainActivity" />
 
         </activity>
+        <activity android:name=".MainActivity1"
+            android:parentActivityName="com.example.recyclerviewlab.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.recyclerviewlab.MainActivity" />
+
+        </activity>
+        <activity android:name=".MainActivity2"
+            android:parentActivityName="com.example.recyclerviewlab.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.recyclerviewlab.MainActivity" />
+
+        </activity>
+        <activity android:name=".MainActivity3"
+            android:parentActivityName="com.example.recyclerviewlab.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.recyclerviewlab.MainActivity" />
+
+        </activity>
+        <activity android:name=".MainActivity4"
+            android:parentActivityName="com.example.recyclerviewlab.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.recyclerviewlab.MainActivity" />
+
+        </activity>
+        <activity android:name=".MainActivity5"
+            android:parentActivityName="com.example.recyclerviewlab.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.recyclerviewlab.MainActivity" />
+
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

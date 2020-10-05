@@ -6,40 +6,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txtTitle"
+    <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Frozen Zabaglione"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Marsala wine is the star of the show in this frozen treat. It gets mixed up with egg yolks, sugar, and salt over a double boiler until thickened before whipped cold heavy cream is folded in. Then it's wrapped, covered, and frozen! Easy, luxurious, and sure to please guests--and no ice cream machine is necessary. "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698" />
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/strawberry" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="382dp"
-        android:layout_height="334dp"
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy No-Bake Strawberry Ice Cream Cake"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04"
-        app:srcCompat="@drawable/frozon" />
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It's hard to find a summer dessert easier and more refreshing than this combination of strawberry ice cream and a purchased 10-inch angel food cake! Layers of cake and ice cream, frosted with a purchased frozen whipped topping, are stored in the freezer until you are ready to garnish and slice. This should keep, covered, in the freezer for a week or two. I've never been able to find out exactly how long it will store, because it's usually gone in a few days!"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874" />
 </androidx.constraintlayout.widget.ConstraintLayout>

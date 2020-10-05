@@ -43,6 +43,25 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             {
                 intent = new Intent(context, MainActivity0.class);
             }
+            else if (mPosition == 1 || mPosition2 == 1)
+            {
+                intent = new Intent(context, MainActivity1.class);
+            }
+            else if (mPosition == 2 || mPosition2 == 2)
+            {
+                intent = new Intent(context, MainActivity2.class);
+            }
+            else if (mPosition == 3 || mPosition2 == 3)
+            {
+                intent = new Intent(context, MainActivity3.class);
+            }
+            else if (mPosition == 4 || mPosition2 == 4)
+            {
+                intent = new Intent(context, MainActivity4.class);
+            }
+            else if (mPosition == 5 || mPosition2 == 5) {
+                intent = new Intent(context, MainActivity5.class);
+            }
             context.startActivity(intent);
 //            System.out.println(mPosition);
 //            String element = mWordList.get(mPosition);

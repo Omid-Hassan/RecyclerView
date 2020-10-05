@@ -6,40 +6,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="366dp"
+        android:layout_height="366dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/swimbiscuits" />
+
     <TextView
-        android:id="@+id/txtTitle"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Frozen Zabaglione"
+        android:text="Butter Swim Biscuits"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintVertical_bias="0.628" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Marsala wine is the star of the show in this frozen treat. It gets mixed up with egg yolks, sugar, and salt over a double boiler until thickened before whipped cold heavy cream is folded in. Then it's wrapped, covered, and frozen! Easy, luxurious, and sure to please guests--and no ice cream machine is necessary. "
+        android:text="These fluffy biscuits are literally swimming in butter! This biscuit-making method gives you the richest and tastiest biscuits ever! "
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="382dp"
-        android:layout_height="334dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04"
-        app:srcCompat="@drawable/frozon" />
+        app:layout_constraintVertical_bias="0.762" />
 </androidx.constraintlayout.widget.ConstraintLayout>
